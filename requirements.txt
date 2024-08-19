@@ -4,6 +4,10 @@ streamlit
 requests
 
 import requests
+s = requests.Session()
+s.get('https://httpbin.org/get')
+
+import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 st.text(fruityvice_response);
 
